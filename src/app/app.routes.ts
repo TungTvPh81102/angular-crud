@@ -1,36 +1,18 @@
 import { Routes } from '@angular/router';
-import { LayoutWebsiteComponent } from './layouts/layout-website/layout-website.component';
-import { HomeComponent } from './page/home/home.component';
 import { LayoutAdminComponent } from './layouts/layout-admin/layout-admin.component';
-import { DashboardComponent } from './page/admin/dashboard/dashboard.component';
-import { ProductListComponent } from './page/admin/products/product-list/product-list.component';
-import { NotFoundComponent } from './page/not-found/not-found.component';
-import { ProductAddComponent } from './page/admin/products/product-add/product-add.component';
-import { ProductEditComponent } from './page/admin/products/product-edit/product-edit.component';
+import { ProductListComponent } from './pages/products/product-list/product-list.component';
+import { ProductAddComponent } from './pages/products/product-add/product-add.component';
+import { ProductEditComponent } from './pages/products/product-edit/product-edit.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: LayoutWebsiteComponent,
-    children: [
-      {
-        path: '',
-        component: HomeComponent,
-      },
-    ],
-  },
-  {
-    path: 'admin',
     component: LayoutAdminComponent,
     children: [
       {
         path: '',
-        redirectTo: 'dashboard',
+        redirectTo: 'products',
         pathMatch: 'full',
-      },
-      {
-        path: 'dashboard',
-        component: DashboardComponent,
       },
       {
         path: 'products',
@@ -45,9 +27,5 @@ export const routes: Routes = [
         component: ProductEditComponent,
       },
     ],
-  },
-  {
-    path: '**',
-    component: NotFoundComponent,
   },
 ];

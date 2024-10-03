@@ -1,0 +1,35 @@
+<div class="d-flex justify-content-between">
+  <h3>Danh sach san pham</h3>
+  <button type="button" routerLink="/products/add" class="btn btn-primary">Them moi</button>
+</div>
+<table class="table table-bordered mt-4">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of products; track item.id; let i = $index) {
+    <tr>
+      <td>{{ i + 1 }}</td>
+      <td>
+        <img width="50" [src]="item.image" alt="" />
+      </td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.price }}</td>
+      <td>{{ item.quantity }}</td>
+      <td>
+        <button routerLink="/products/{{ item.id }}/edit" class="btn btn-warning">Edit</button>
+        <button (click)="handleRemove(item.id)" class="btn btn-danger ms-2">
+          Delete
+        </button>
+      </td>
+    </tr>
+    }
+  </tbody>
+</table>

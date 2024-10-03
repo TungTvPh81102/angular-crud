@@ -1,10 +1,8 @@
 export interface IProduct {
-    id: number | string;
-    name: string;
-    price: number;
-    imageUrl: string;
-    category: string;
-    published: boolean;
-    description: string;
-    in_stock: boolean;
+  id: number;
+  name: string;
+  image: string;
+  price: number;
+  quantity: number;
+  description: string;
 }
