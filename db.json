@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 3,
+      "name": "Product 3",
+      "price": 19.99,
+      "imageUrl": "https://picsum.photos/seed/product3/300/200",
+      "category": "Clothing",
+      "published": true,
+      "description": "Comfortable and stylish clothing item perfect for everyday wear.",
+      "in_stock": true
+    },
+    {
+      "id": 5,
+      "name": "Product 5",
+      "price": 15.99,
+      "imageUrl": "https://picsum.photos/seed/product5/300/200",
+      "category": "Toys",
+      "published": false,
+      "description": "Fun and engaging toy that is perfect for children of all ages.",
+      "in_stock": false
+    },
+    {
+      "id": 9,
+      "name": "Product 9",
+      "price": 39.99,
+      "imageUrl": "https://picsum.photos/seed/product9/300/200",
+      "category": "Sports",
+      "published": true,
+      "description": "High-performance sports equipment for enthusiasts.",
+      "in_stock": true
+    },
+    {
+      "name": "Quan jean",
+      "price": "6000",
+      "imageUrl": "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/272873272_1594101220982769_1678305987354425181_n.jpg?stp=dst-jpg_p526x296&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=g6tToTNoVnIQ7kNvgE0bWam&_nc_ht=scontent.fhan14-3.fna&_nc_gid=AK81ZM1fGSDuHXy6EmqYt2A&oh=00_AYCqXlDhoETOCtX34xQ2YceWr-RmSICCAKtRuyqgwTsvYQ&oe=66FE5956",
+      "category": "Toys",
+      "published": true,
+      "in_stock": true,
+      "description": "Day la mot chiec quan jean",
+      "id": 10
+    },
+    {
+      "name": "Mot chiec ao cua tung",
+      "price": "90000",
+      "imageUrl": "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-1/456382076_2239095963149955_4197352659754532297_n.jpg?stp=dst-jpg_s200x200&_nc_cat=109&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=vNjPeO7dbnoQ7kNvgE_2TjC&_nc_ht=scontent.fhan14-5.fna&_nc_gid=AWraiaX-dQPR7pNdVt_ucZ4&oh=00_AYD2EwnHMWBQv_9M1THe5WCY74Mvnq7YHBf4D-PLQ78iAg&oe=66FE2835",
+      "category": "Toys",
+      "published": true,
+      "in_stock": true,
+      "description": "Day la mot chiec ao",
+      "id": 11
+    },
+    {
+      "name": "Áo thun",
+      "price": "100000",
+      "imageUrl": "https://picsum.photos/200/200",
+      "category": "Clothing",
+      "published": false,
+      "in_stock": false,
+      "description": "Mo",
+      "id": 12
+    }
+  ]
+}
